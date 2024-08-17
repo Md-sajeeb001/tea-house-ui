@@ -34,20 +34,48 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div>
-                <img src="./images/logo.png" alt="">
+    <header class="bg-gray-100 py-5 px-7 md:px-20 lg:px-32">
+        <!-- ---nav section--- -->
+        <nav class="flex items-center justify-between " >
+            <div class="w-16 bg-gray-50">
+                <img src="./images/logo.png">
             </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Tea</a></li>
-                <li><a href="#">Review</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            <ul class="md:flex lg:flex md:space-x-10 md:text-lg md:font-medium lg:text-lg lg:font-semibold ">
+
+                <li class="hidden md:block"><a href="#">Home</a></li>
+                <li class="hidden md:block"><a href="#">Products</a></li>
+                <li class="hidden md:block"><a href="#">Tea</a></li>
+                <li class="hidden md:block"><a href="#">Review</a></li>
+                <li class="hidden md:block"><a href="#">Contact Us</a></li>
+                <li class="md:hidden text-2xl"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
             </ul>
         </nav>
+        
+        <!-- --header container-- -->
+        <div class="grid grid-cols-1 my-12 lg:grid-cols-2 md:grid-cols-2 lg:my-10 md:my-10">
+        <!-- --header text section-- -->
+            <div class="space-y-5 mt-12">
+                <h1 class="text-4xl font-medium md:text-5xl md:font-semibold lg:text-6xl lg:font-bold">It's good <br> tea time at The <br> Tea House</h1>
+                <p class="max-w-96 font-medium text-gray-700">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="bg-gradient-to-r from-yellow-500 to-red-600 px-4 py-3 rounded-lg text-white">Explore now <i class="fa-solid fa-arrow-right -rotate-45 ml-2 text-xl"></i></button>
+            </div>
+        <!-- ---header images section--- -->
+            <div class="relative">
+                <div class="mt-10">
+                    <img src="./images/banner.png" alt="">
+                </div>
+
+                <div class="absolute -bottom-10 left-20 md:-bottom-10 md:left-10 lg:-bottom-7 lg:left-28 flex items-center justify-center space-x-4
+                shadow-lg bg-white p-5 rounded-lg">
+
+                    <i class="fa-solid fa-star text-yellow-300 text-3xl"></i>
+                    <div class="">
+                        <span class="text-2xl font-bold">5.00</span>
+                        <p class="capitalize text-lg text-gray-600">trust pilot ratings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
